@@ -1,0 +1,445 @@
+/*Note: Some of these styles cover more things than their stated heading.  A particular element was inspected and the entire CSS line was copied, not just the active style for that element.*/
+
+/*PRIMO HOMEPAGE*/
+
+/* Change the logo so it reduces down in size when viewing on small mobile devices; otherwise, with wide logos like our Reynolds Libraries one, it will cut off the menu options on right hand side of page */
+
+@media (min-width: 768px) {
+.product-logo {
+    height: 100% !important;
+}
+}
+
+prm-logo .product-logo {
+    cursor: pointer;
+    height: 85%;
+    padding: .85em;
+}
+
+/*Change search bar background color*/
+.prm-primary-bg, prm-atoz-search-bar, prm-browse-search-bar, prm-collection-gallery-header .collection-header-inner, prm-newspapers-search-bar, prm-search-bar, prm-spinner.overlay-cover.light-on-dark:after, prm-tags-search-bar {
+  background-color:#a32638;
+}
+
+/*Change top bar background color*/
+.prm-primary-bg.prm-hue1, prm-browse-search-bar.prm-hue1, prm-journals-search-bar.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-tags-search-bar.prm-hue1, prm-topbar .top-nav-bar {
+ background-color:#ffffff;
+}
+
+/*Change top bar background color upon clicking Sign In*/
+.prm-primary-bg.prm-hue3-important, prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background, prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background, prm-search-bar.prm-hue3-important {
+ background-color: #ffffff !important; 
+}
+
+/*Hide link boxes on top bar -- for now I'm not going to hide b/c I want select ones to show*/
+
+/* Change color of hover top menu bar box items */
+
+._md-focused.md-button.button-over-dark:not([disabled]), .hoverable-over-dark._md-focused:not([disabled]), .hoverable-over-dark.hovered:not([disabled]), .hoverable-over-dark.md-focused:not([disabled]), .hoverable-over-dark:focus:not([disabled]), .hoverable-over-dark:hover:not([disabled]), .hovered.md-button.button-over-dark:not([disabled]), .md-button.button-over-dark:focus:not([disabled]), .md-button.button-over-dark:hover:not([disabled]), .md-focused.md-button.button-over-dark:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] ._md-focused.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.md-button.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.md-button:not([disabled]):hover, prm-main-menu[menu-type=full] .hovered.overlay-menu-item.md-focused:not([disabled]), prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):focus, prm-main-menu[menu-type=full] .hovered.overlay-menu-item:not([disabled]):hover, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button:hover:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .md-button md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .md-button md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .md-focused.md-button:not([disabled]), prm-main-menu[menu-type=full] .md-focused.overlay-menu-item:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>._md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.hovered.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-focused.md-select-dummy:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:hover:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item:hover:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus:not([disabled]), prm-main-menu[menu-type=full] .overlay-menu-item md-select:hover:not([disabled]):focus, prm-main-menu[menu-type=full] md-button._md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-button._md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-button.hovered:not([disabled]):focus, prm-main-menu[menu-type=full] md-button.hovered:not([disabled]):hover, prm-main-menu[menu-type=full] md-button.md-focused:not([disabled]):focus, prm-main-menu[menu-type=full] md-button.md-focused:not([disabled]):hover, prm-main-menu[menu-type=full] md-button:focus:not([disabled]), prm-main-menu[menu-type=full] md-button:hover:not([disabled]), prm-topbar ._md-focused.md-button:not([disabled]), prm-topbar .hovered.md-button:not([disabled]), prm-topbar .md-button:focus:not([disabled]), prm-topbar .md-button:hover:not([disabled]), prm-topbar .md-focused.md-button:not([disabled]), prm-user-area ._md-focused.md-button.user-menu-button:not([disabled]), prm-user-area .hovered.md-button.user-menu-button:not([disabled]), prm-user-area .md-button.user-menu-button:focus:not([disabled]), prm-user-area .md-button.user-menu-button:hover:not([disabled]), prm-user-area .md-focused.md-button.user-menu-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item ._md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .hovered.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-button:hover:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item .md-focused.md-button:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container._md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.hovered:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-focused:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:focus:not([disabled]), prm-user-area md-fab-toolbar .md-fab-action-item md-input-container:hover:not([disabled]) {
+        background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/*Change color of Sign In link*/
+prm-user-area .user-menu-button .user-name {
+ color:#fff;
+}
+
+prm-user-area-expandable .md-button.user-button {
+ color:#fff;
+}
+
+/*Remove shadow underneath circular button links upon hovering*/
+prm-search-bookmark-filter a:hover {
+ box-shadow:none;
+}
+
+/*Change color of circular button links*/
+.hoverable-over-dark, .md-button.button-over-dark, prm-main-menu[menu-type=full] .md-button.md-focused, prm-main-menu[menu-type=full] .md-button .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .md-button:focus, prm-main-menu[menu-type=full] .md-button:hover, prm-main-menu[menu-type=full] .md-button md-select:focus, prm-main-menu[menu-type=full] .overlay-menu-item.md-focused, prm-main-menu[menu-type=full] .overlay-menu-item .md-input-container-dummy>.md-select-dummy:focus, prm-main-menu[menu-type=full] .overlay-menu-item:focus, prm-main-menu[menu-type=full] .overlay-menu-item:hover, prm-main-menu[menu-type=full] .overlay-menu-item md-select:focus, prm-main-menu[menu-type=full] md-card:focus, prm-main-menu[menu-type=full] md-card:hover, prm-topbar .md-button, prm-user-area .md-button.user-menu-button, prm-user-area md-fab-toolbar ._md-fab-action-item .md-button, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container, prm-user-area md-fab-toolbar .md-fab-action-item .md-button, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container {
+ color:#333;
+}
+
+/* Change search box magnifiying glass to Maroon theme color */
+.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon+span, .service-form-static-panel button.button-confirm prm-icon svg path {
+	color: #a32638;
+}
+
+/*Remove shadow and color when hovering over logo*/
+.product-logo a:hover {
+ box-shadow:none !important;
+ background-color:transparent;
+}
+
+/*Change color of search icon on search bar*/
+/*.md-button.button-confirm, .service-form-static-panel button.button-confirm prm-icon+span, .service-form-static-panel button.button-confirm prm-icon svg path {
+ color:#333;
+} */
+
+/*Change color of Sign In text*/
+.prm-secondary-color.prm-hue4, prm-search-bookmark-filter .prm-hue4.md-button, prm-topbar .prm-hue4.top-nav-bar, prm-user-area-expandable .md-button.user-button {
+ color:#a32638;
+}
+
+/*Change colors of pre-filter text*/
+prm-pre-filters md-input-container.is-active {
+ color:#a32638;
+}
+
+prm-pre-filters md-input-container.is-active :focus {
+ color: #a32638;
+}
+
+/*Change color of pre-filter underline on selecting All Items*/
+.dark-toolbar prm-pre-filters md-input-container:after, .dark-toolbar prm-pre-filters prm-tags-list .md-chips ._md-chip-input-container:after, .dark-toolbar prm-pre-filters prm-tags-list .md-chips .md-chip-input-container:after, .dark-toolbar prm-pre-filters prm-tags-list md-chips ._md-chip-input-container:after, .dark-toolbar prm-pre-filters prm-tags-list md-chips .md-chip-input-container:after, .prm-secondary-bg.prm-hue2, md-checkbox.md-checked ._md-icon, md-checkbox.md-checked .md-icon, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue2.md-bar, md-radio-group.layout-row.md-focused md-radio-button.md-checked :before, prm-tags-list .md-chips .dark-toolbar prm-pre-filters ._md-chip-input-container:after, prm-tags-list .md-chips .dark-toolbar prm-pre-filters .md-chip-input-container:after, prm-tags-list md-chips .dark-toolbar prm-pre-filters ._md-chip-input-container:after, prm-tags-list md-chips .dark-toolbar prm-pre-filters .md-chip-input-container:after {
+ background-color:#fff;
+}
+
+/*Change color of drop-down arrows on pre-filter*/
+md-select-value#select_value_label_8 ._md-select-icon {
+ color:#fff;
+}
+
+md-input-container.md-primoExplore-theme.md-input-has-value.is-active md-select-value#select_value_label_8 ._md-select-icon {
+ color:#a32638;
+}
+
+/*RESULTS PAGE*/
+
+/*Move "Expand My Results" on the facet menu to the bottom*/
+prm-facet div div div.sidebar-section.margin-top-small.margin-bottom-medium.compensate-padding-left {
+    order:100;
+	padding-top:25px;
+}
+
+/*Fix padding on the years of Publication Date facet*/
+prm-facet-range div div md-input-container .md-input {
+ padding: 0px;
+ margin-right:5px;
+}
+
+/*Hide yellow sign-in bar*/
+prm-search prm-alert-bar {
+ display:none;
+}
+
+/*Change color of icons in top right corner of each result*/
+.link-alt-color, .prm-secondary-color.prm-hue1, .result-item-actions .pin-button, .section-title prm-icon, prm-add-query-to-saved-searches .custom-button.pin-button, prm-recomendation-item .media-on-hover .pin-button, prm-search-bookmark-filter .prm-hue1.md-button, prm-topbar .prm-hue1.top-nav-bar {
+ color:#a32638;
+}
+
+/*Change hover color of icons in top right corner of each result*/
+.result-item-actions .pin-button.pinned:focus, .result-item-actions .pin-button.pinned:hover {
+ color:#a32638;
+}
+
+/*Change hover color of icons in top right corner of each result*/
+.md-button._md-focused:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button:focus:not([disabled]), .md-button:hover:not([disabled]) {
+ color:#a32638;
+}
+
+/*Change color of icons next to availability*/
+prm-search-result-availability-line [availability-type] {
+ color:#a32638;
+}
+
+/*Change color of library location and see all versions*/
+.duedate>span, .fulltext>span, .fulltext_linktorsrc>span, .getit>span, .login-dialog .collapsable-container md-list md-list-item .md-list-item-inner, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, .login-dialog .md-list md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item .md-list-item-text h3, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, .login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text h3, .md-button.arrow-link-button .button-content, .md-button.arrow-link-button [link-arrow], .not_restricted>span, .prm-links, .restricted>span, .separate-list-items md-list-item .item-loader-with-text .md-button, .tiles-grid-tile .tile-header .header-link .arrow-icon, .tiles-grid-tile .tile-header .header-link:focus, .tiles-grid-tile .tile-header .header-link:hover, .tiles-grid-tile .tile-header .md-button, .woldcat>span, [class*=_more]>span, [class*=_unknown]>span, [class*=available]>span, [class*=check_]>span, [class*=does_not_exist]>span, [class*=FT]>span, [class*=may_]>span, [class*=NFT]>span, [class*=no_]>span, [class*=unavailable]>span, a, md-grid-tile .tile-header .header-link .arrow-icon, md-grid-tile .tile-header .header-link:focus, md-grid-tile .tile-header .header-link:hover, md-grid-tile .tile-header .md-button, md-input-container.has-fixed-message [ng-message] a, md-list-item.list-item-as-link, md-tabs.tabs-as-app .back-button, md-tabs.tabs-as-links md-tab-item, md-tabs.tabs-as-links md-tab-item:not([disabled]), prm-tags-list .md-chips .md-chip .md-chip-content strong, prm-tags-list .md-chips md-chip .md-chip-content strong, prm-tags-list md-chips .md-chip .md-chip-content strong, prm-tags-list md-chips md-chip .md-chip-content strong {
+ color:#325b84;
+}
+
+/*Change hover color of "See all" next to multiple sources*/
+.md-button.arrow-link-button .button-content:focus, .md-button.arrow-link-button .button-content:hover, .md-button.arrow-link-button .hover.button-content, .md-button.arrow-link-button:focus .button-content, .md-button.arrow-link-button:hover .button-content, .prm-links-hover.prm-hue-1, .recommendations-title.hover>span>span, .recommendations-title:hover>span>span, a.hover, a:focus, a:hover, prm-citation-trails-item.active-item md-card>.md-button:focus .item-title span, prm-citation-trails-item.active-item md-card>.md-button:hover .item-title span, prm-tags-list .md-chips .md-chip .md-chip-content:hover strong, prm-tags-list .md-chips md-chip .md-chip-content:hover strong, prm-tags-list md-chips .md-chip .md-chip-content:hover strong, prm-tags-list md-chips md-chip .md-chip-content:hover strong {
+ color:#a32638;
+}  
+
+/*Change color of external link icon*/
+[external-link] {
+ color:#a32638;
+}
+
+/*Change color of Clear button when facets are selected*/
+.md-button {
+ color:#a32638;
+}
+
+/*Change color of item title in results list*/
+prm-brief-result .item-title span {
+ color:#a32638;
+}
+
+/*Change color of facet menu headers*/
+.section-title-header, .sidebar-header {
+ color:#a32638;
+}
+
+/*Change color of sidebar menu title*/
+h2 {
+ font-weight:400;
+ color:#000000;
+}
+
+/*Change color of "available online" or "available at"*/
+.fulltext, .fulltext_linktorsrc, .not_restricted, .prm-positive, .status-available, [class*=available], [class*=FT] {
+ color:#000000;
+}
+
+/*Change color of "checked out"*/
+.duedate, .prm-negative, .restricted, .status-unavailable, [class*=no_], [class*=unavailable] {
+ color:gray;
+}
+
+/*Change color of Piedmont Virginia Internet Books and arrows*/
+.duedate>span, .fulltext>span, .fulltext_linktorsrc>span, .getit>span, .login-dialog .collapsable-container md-list md-list-item .md-list-item-inner, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item .md-list-item-text h3, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list[class$=-line] md-list-item>.md-no-style .md-list-item-text h3, .login-dialog .md-list md-list-item .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item .md-list-item-text h3, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog .md-list md-list-item>.md-no-style .md-list-item-text h3, .login-dialog md-list md-list-item .md-list-item-text .list-item-title, .login-dialog md-list md-list-item .md-list-item-text h3, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text .list-item-title, .login-dialog md-list md-list-item>.md-no-style .md-list-item-text h3, .md-button.arrow-link-button .button-content, .md-button.arrow-link-button [link-arrow], .not_restricted>span, .prm-links, .restricted>span, .separate-list-items md-list-item .item-loader-with-text .md-button, .tiles-grid-tile .tile-header .header-link .arrow-icon, .tiles-grid-tile .tile-header .header-link:focus, .tiles-grid-tile .tile-header .header-link:hover, .tiles-grid-tile .tile-header .md-button, .woldcat>span, [class*=_more]>span, [class*=_unknown]>span, [class*=available]>span, [class*=check_]>span, [class*=does_not_exist]>span, [class*=FT]>span, [class*=may_]>span, [class*=NFT]>span, [class*=no_]>span, [class*=unavailable]>span, a, md-grid-tile .tile-header .header-link .arrow-icon, md-grid-tile .tile-header .header-link:focus, md-grid-tile .tile-header .header-link:hover, md-grid-tile .tile-header .md-button, md-input-container.has-fixed-message [ng-message] a, md-list-item.list-item-as-link, md-tabs.tabs-as-app .back-button, md-tabs.tabs-as-links md-tab-item, md-tabs.tabs-as-links md-tab-item:not([disabled]), prm-tags-list .md-chips .md-chip .md-chip-content strong, prm-tags-list .md-chips md-chip .md-chip-content strong, prm-tags-list md-chips .md-chip .md-chip-content strong, prm-tags-list md-chips md-chip .md-chip-content strong {
+ color:#a32638;
+}
+
+/*Change hover color of exclude facet button*/
+.available-facets .section-content .md-chips .md-chip .button-exclude._md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.hovered:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude.md-focused:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:focus:not([disabled]), .available-facets .section-content .md-chips .md-chip .button-exclude:hover:not([disabled]) {
+ color:#a32638;
+ background-color:lightgray;
+}
+
+/*Change color of exclude facet button*/
+.available-facets .section-content .md-chips .md-chip .button-exclude {
+ color:#a32638;
+}
+
+/*Change color of Show More links in facet menu*/
+.bar prm-authentication .md-button.link-alt-color, .bar prm-authentication .section-title prm-icon.md-button, .md-button.button-as-link.link-alt-color, .section-title .bar prm-authentication prm-icon.md-button, .section-title prm-icon.md-button.button-as-link {
+ color:#a32638;
+}
+
+/*Change color of focus on My Favorites page when Saved Records, Saved Searches, and Search History is selected*/
+.md-input-color-underline, .new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container.empty-select-on-init:not(.md-input-focused) .md-input-container-dummy>.md-select-dummy md-select-value:after, md-input-container.empty-select-on-init:not(.md-input-focused) md-select md-select-value:after, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar, prm-tags-list .md-chips ._md-chip-input-container:after, prm-tags-list .md-chips .md-chip-input-container:after, prm-tags-list md-chips ._md-chip-input-container:after, prm-tags-list md-chips .md-chip-input-container:after {
+ color:#ffffff;
+}
+
+/*Change color of first item in list of tools when ... button is selected*/
+.md-button.md-primary._md-focused:not([disabled]), .md-button.md-primary.hovered:not([disabled]), .md-button.md-primary.md-focused:not([disabled]), .md-button.md-primary:focus:not([disabled]), .md-button.md-primary:hover:not([disabled]) {
+ color:#a32638;
+}
+
+/*Change color of icons in top right corner of each result*/
+.md-autocomplete-suggestions .suggestion-scope, .prm-primary-color, .request-form md-input-container .md-input-container-dummy>.md-select-dummy ._md-select-value._md-select-placeholder, .request-form md-input-container .md-input-container-dummy>.md-select-dummy .md-select-value.md-select-placeholder, .request-form md-input-container label, .request-form md-input-container label:not(.md-no-float):not(._md-container-ignore), .request-form md-input-container md-select ._md-select-value._md-select-placeholder, .request-form md-input-container md-select .md-select-value.md-select-placeholder, .result-item-actions .md-icon-button, .result-item-actions .more-options-button, md-tab-content .tab-content-header md-input-container md-select-value .md-text, md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]), md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]), prm-add-query-to-saved-searches .custom-button {
+ color:#a32638;
+}
+
+/*Make color of icons in top right corner of each result darker*/
+.result-item-actions>.md-button {
+ opacity:1;
+}
+
+/*Change color of "Check holdings at" and "Multiple versions"*/
+.getit, .md-button.arrow-link-button prm-search-result-frbr-line .button-content>prm-icon:first-child, .prm-notice, .status-maybe, .woldcat, [class*=_more], [class*=_unknown], [class*=check_], [class*=does_not_exist], [class*=may_], [class*=NFT], prm-search-result-frbr-line .md-button.arrow-link-button .button-content>prm-icon:first-child, prm-search-result-frbr-line a>prm-icon:first-child {
+ color:#000000;
+}
+
+/*Change color of Apply Filters button*/
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary, .prm-positive-bg {
+ background-color:#a32638;
+ color:#fff;
+}
+
+/*Change hover color of Apply Filters button*/
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary:focus, .multiselect-submit .multiselect-submit-inner .md-button.md-primary:hover {
+ background-color:#325b84;
+}
+
+/*Change color of checkbox next to facets*/
+.prm-secondary-bg.prm-hue2, md-checkbox.md-checked ._md-icon, md-checkbox.md-checked .md-icon, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue2.md-bar {
+ background-color:#325b84;
+}
+
+/*Make color of checkbox next to facets lighter*/
+md-checkbox.md-checked ._md-icon, md-checkbox.md-checked .md-icon, md-checkbox.md-checked:hover ._md-icon, md-checkbox.md-checked:hover .md-icon {
+ opacity:.9;
+}
+
+/*Turn off Active Filter heading*/
+.sidebar-section.filtered-facets-section.animate-chip-section.margin-bottom-large h2.sidebar-title {
+ display:none;
+}
+
+/*Change hover color of Refine button next to publication date*/
+.bar prm-authentication .md-button.link-alt-color._md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color.hovered:not([disabled]), .bar prm-authentication .md-button.link-alt-color.md-focused:not([disabled]), .bar prm-authentication .md-button.link-alt-color:focus:not([disabled]), .bar prm-authentication .md-button.link-alt-color:hover:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button._md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.hovered:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button.md-focused:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:focus:not([disabled]), .bar prm-authentication .section-title prm-icon.md-button:hover:not([disabled]), .md-button.button-as-link.link-alt-color._md-focused:not([disabled]), .md-button.button-as-link.link-alt-color.hovered:not([disabled]), .md-button.button-as-link.link-alt-color.md-focused:not([disabled]), .md-button.button-as-link.link-alt-color:focus:not([disabled]), .md-button.button-as-link.link-alt-color:hover:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button._md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.hovered:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button.md-focused:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:focus:not([disabled]), .section-title .bar prm-authentication prm-icon.md-button:hover:not([disabled]), .section-title prm-icon.md-button.button-as-link._md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link.hovered:not([disabled]), .section-title prm-icon.md-button.button-as-link.md-focused:not([disabled]), .section-title prm-icon.md-button.button-as-link:focus:not([disabled]), .section-title prm-icon.md-button.button-as-link:hover:not([disabled]) {
+ color:#325b84;
+}
+
+/*Change color of excluded facet that appears at the top*/
+prm-breadcrumbs .md-chip.facet-excluded {
+ color:#a32638;
+}
+
+/*Change color of marked record icon in top right corner when it's selected from results*/
+prm-search-bookmark-filter #favorites-button:before {
+ background-color:#ffffff;
+}
+
+/*Change color of peer-reviewed icon*/
+.peer-reviewed-mark-icon {
+color:black!important;
+}
+
+/*ADVANCED SEARCH*/
+
+/*Change color of arrow next to "Any field contains" that appears after search terms are entered*/
+prm-browse-search-bar .advanced-search-wrapper .search-string .string-block prm-icon, prm-journals-search-bar .advanced-search-wrapper .search-string .string-block prm-icon, prm-search-bar .advanced-search-wrapper .search-string .string-block prm-icon, prm-tags-search-bar .advanced-search-wrapper .search-string .string-block prm-icon {
+ color:#ffffff;
+}
+
+/*Change hover color of Clear button*/
+.md-button.button-notice._md-focused:not([disabled]), .md-button.button-notice.hovered:not([disabled]), .md-button.button-notice.md-focused:not([disabled]), .md-button.button-notice:focus:not([disabled]), .md-button.button-notice:hover:not([disabled]) {
+ color:#325b84;
+ background-color:rgba(92,146,189,.1);
+}
+
+/*Change color of Clear button*/
+.md-button.button-notice {
+ color:#a32638;
+}
+
+/*Change color of Add a New Line button*/
+.md-button.md-primary {
+ color:#a32638;
+}
+
+/*Change hover color of Search button*/
+.md-button.button-confirm._md-focused:not([disabled]), .md-button.button-confirm.hovered:not([disabled]), .md-button.button-confirm.md-focused:not([disabled]), .md-button.button-confirm:focus:not([disabled]), .md-button.button-confirm:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon+span:hover:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.hovered:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path.md-focused:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:focus:not([disabled]), .service-form-static-panel button.button-confirm prm-icon svg path:hover:not([disabled]) {
+ color:#a32638;
+ background-color:rgba(92,146,189,.1);
+}
+
+/*Change color of drop-down arrows*/
+._md-select-value ._md-select-icon {
+ color:#a32638;
+}
+
+/*Change color of underline when entering search terms*/
+.md-input-color-underline, .new-result-item .list-item-count, .prm-secondary-bg.prm-hue1, md-input-container.empty-select-on-init:not(.md-input-focused) .md-input-container-dummy>.md-select-dummy md-select-value:after, md-input-container.empty-select-on-init:not(.md-input-focused) md-select md-select-value:after, md-input-container:after, md-progress-linear[md-mode=indeterminate].header-progress-bar .prm-hue1.md-bar, md-radio-button.md-checked ._md-on, md-radio-button.md-checked .md-on, md-tabs md-ink-bar, prm-tags-list .md-chips ._md-chip-input-container:after, prm-tags-list .md-chips .md-chip-input-container:after, prm-tags-list md-chips ._md-chip-input-container:after, prm-tags-list md-chips .md-chip-input-container:after {
+ background-color:#ffffff;
+}
+
+/*ITEM PAGE*/
+
+/*Change color of left menu titles*/
+.md-button.button-link, .tiles-grid-tile .tile-content>.md-button, md-grid-tile .tile-content>.md-button {
+ color:#a32638;
+ font-weight:700;
+}
+
+/*Change color of X to close item page*/
+.prm-full-view-dialog~.close-button.md-icon-button prm-icon {
+ color:#a32638;
+}
+
+/*Change color "cited in this"*/
+prm-citation-trails-indication .md-button.button-with-icon, prm-citation-trails-indication .md-button.md-icon-button {
+ color:#ffffff;
+}
+
+/*Change hover color of "cited in this"*/
+prm-citation-trails-indication .md-button.button-with-icon._md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.hovered:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon.md-focused:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:focus:not([disabled]), prm-citation-trails-indication .md-button.button-with-icon:hover:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button._md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.hovered:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button.md-focused:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:focus:not([disabled]), prm-citation-trails-indication .md-button.md-icon-button:hover:not([disabled]) {
+ color:#ffffff;
+ background-color:rgba(174,41,84,.1);
+}
+
+/*Change color of "Now listing sources cited in"*/
+.prm-citation-color, prm-citation-trails-item .item-type {
+ color:#ffffff;
+}
+
+/*Change color of Sign In button under Get It section*/
+.bar prm-authentication .md-button, .md-button.button-as-link {
+ color:#a32638;
+}
+
+/*Change color of Related Reading Links*/
+.recommendations-title {
+ color:#a32638;
+}
+
+/* Hide Tags in Detailed Display */
+[aria-label="Tags"]{
+	display:none;
+}
+#tags{
+	display:none;
+}
+
+/*ACCOUNT PAGE*/
+
+/*Disable top menu buttons in center of top bar -- I'm leaving this for now so you can see links on top bar*/
+
+
+/*Disable language options before logging in*/
+prm-change-lang {
+ display:none;
+}
+
+span.user-language.text-uppercase {
+ display:none;	
+}
+
+/*Disable "Blocks & Fees" from menu and the box below*/
+md-content#accountoverview md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item:nth-child(5) {
+ display:none;}
+
+prm-messages-and-blocks-overview {
+ display:none;}
+
+/*Disable "Language options" box after logging in*/
+prm-personal-info div.layout-wrap md-card:nth-child(2) {
+ display:none;}
+ 
+/*Change color of icon next to Loans tab*/
+.md-chip-remove-container button:focus md-icon, .md-chip-remove-container button:hover md-icon, .md-chips .md-chip.toggleable-chip .md-chip-remove-container prm-icon.close-button, .prm-warn, .required-starlet, md-input-container.md-input-invalid, md-input-container.md-input-invalid:before, md-input-container.md-required:before, prm-tags-list .md-chips.md-removable .md-chip .md-chip-remove md-icon, prm-tags-list .md-chips.md-removable md-chip .md-chip-remove md-icon, prm-tags-list md-chips.md-removable .md-chip .md-chip-remove md-icon, prm-tags-list md-chips.md-removable md-chip .md-chip-remove md-icon {
+ color:#ffffff;
+}
+
+/*Change color of due date and time on items on Loans tab*/
+prm-loan div.weak-text div:nth-child(1) p:nth-child(1) {
+ color:#ffffff !important;
+}
+
+/*Change color of bell icon next to each item on Hold tab*/
+prm-requests md-list div.weak-text prm-icon {
+ color:#ffffff !important;
+}
+
+/*Change color when hovering over drop-down arrow on Loan tab*/
+.md-button._md-focused:not([disabled]), .md-button.hovered:not([disabled]), .md-button.md-focused:not([disabled]), .md-button:focus:not([disabled]), .md-button:hover:not([disabled]) {
+ background-color:rgba(50,91,132,.1);
+}
+
+/*Change color when item is renewed on Loan tab*/
+prm-loan div.item-respond span {
+ color:#ffffff !important;
+}
+
+/*Disable ability to edit account information*/
+prm-personal-info div:nth-child(2) div.md-toolbar-tools {
+ display:none;	
+}
+
+/*Change color of different colleges if student belongs to more than one*/
+prm-account-overview .institutions-list md-list-item.is-selected .institution-name {
+ color:#a32638;
+}
+
+/*CITATION SEARCH*/
+
+/*Change color of radio button border*/
+.md-input-container-dummy>.md-select-dummy:focus .md-select-value, .md-input-focused .md-input-container-dummy>.md-select-dummy .md-select-value, .md-input-focused md-select .md-select-value, .md-input-focused md-select:not([disabled]) .md-select-value, .prm-secondary-border.prm-hue1, md-radio-button.md-checked ._md-off, md-radio-button.md-checked .md-off, md-select:focus .md-select-value, md-select:not([disabled]):focus .md-select-value {
+ border-color:rgba(0,0,0,.57);	
+}
+
+/*PRINT CSS*/
+
+/*Optimize printing for all browsers - hide the "sort by" sidebar, hide the book covers, hide the "filter by" that appears on mobile devices, and hide the page down button*/
+@media print {
+  div.sidebar {display:none;}
+  .layout, .layout-column, .layout-row {display:block;}
+  prm-search-result-thumbnail-container {display:none;}
+  prm-page-nav-menu {display:none;}
+  md-toolbar {display:none;}
+}
+
